@@ -175,7 +175,6 @@ $timetable-gap: 4px;
   grid-template-rows: auto 1fr;
   grid-template-columns: auto 1fr;
   overflow: auto;
-  scroll-snap-type: x mandatory;
 
   --column-count: 5;
   @media (max-width: 840px) { --column-count: 4; }
