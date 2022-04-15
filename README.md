@@ -1,8 +1,7 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/9145551f-c1f3-41d3-aadd-23ec71a4f592/deploy-status)](https://app.netlify.com/sites/dk-timetable/deploys)
 
 # Timetable
 
-A Quasar Project
+A fork of [dominik-korsa/timetable](https://github.com/dominik-korsa/timetable) with scroll snapping disabled.
 
 ## Install the dependencies
 ```bash
