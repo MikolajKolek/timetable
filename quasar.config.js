@@ -39,7 +39,7 @@ module.exports = configure((ctx) => ({
   // --> boot files are part of "main.js"
   // https://v2.quasar.dev/quasar-cli-webpack/boot-files
   boot: [
-
+    'install-prompt',
   ],
 
   // https://v2.quasar.dev/quasar-cli-webpack/quasar-config-js#Property%3A-css
@@ -87,6 +87,8 @@ module.exports = configure((ctx) => ({
     // chainWebpack (/* chain */) {}
     env: {
       PROXY_URL: requireEnv('PROXY_URL'),
+      OLD_HOST: requireEnv('OLD_HOST'),
+      NEW_HOST: requireEnv('NEW_HOST'),
       BRANCH: process.env.BRANCH,
       DEPLOY_ID: process.env.DEPLOY_ID,
       REPOSITORY_URL: process.env.REPOSITORY_URL,
@@ -158,9 +160,9 @@ module.exports = configure((ctx) => ({
     // chainWebpackCustomSW (/* chain */) {},
 
     manifest: {
-      name: 'Timetable',
-      short_name: 'Timetable',
-      description: '',
+      name: 'Plan lekcji',
+      short_name: 'Plan lekcji',
+      description: 'Aplikacja do planów lekcji OPTIVUM i planu V LO w Krakowie',
       display: 'standalone',
       orientation: 'any',
       background_color: '#ffffff',
